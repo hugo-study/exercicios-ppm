@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Exercicio 10</h1>
+    
+    <form id="forms" style="display: flex; flex-direction: column; max-width: 200px; gap: 5px; margin: 0 auto;">
+        <div>
+            <label for="planeta">Planeta</label>
+            <select id="planeta" name="planeta">
+                <option selected value="default">Selecione um planeta</option>
+                <option value="0.37">Mercúrio</option>
+                <option value="0.88">Vênus</option>
+                <option value="0.38">Marte</option>
+                <option value="2.64">Júpiter</option>
+                <option value="1.15">Saturno</option>
+                <option value="1.17">Urano</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" step='0.01'>
+        </div>
+
+        <div>
+            <button id="calcular" type="submit">Calcular</button>
+            <button id="limpar" type="button">Cancelar</button>
+        </div>
+        
+        <p id="result">Resultado:</p>
+    </form>
+    <script src="script.js">
+    </script>
+</body>
+</html>
